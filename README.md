@@ -87,7 +87,7 @@ yum install iptables ipset curl jq
 ### **1. Download and Setup**
 ```bash
 # Clone repository
-git clone https://github.com/virebent/advanced-firewall.git
+[git clone https://github.com/virebent/advanced-firewall.git](https://github.com/gabrix73/surveillance-capitalism-blocker.git)
 cd advanced-firewall
 
 # Make executable
@@ -95,7 +95,7 @@ chmod +x virebent-firewall.sh
 
 # Configure your server IP
 nano virebent-firewall.sh
-# Edit: LOCAL=37.27.81.18/32  # Replace with your server IP
+# Edit: LOCAL=12.34.56.78/32  # Replace with your server IP
 ```
 
 ### **2. Deploy Firewall**
@@ -123,7 +123,7 @@ LOCAL=your.server.ip.here/32
 
 ### **Port Configuration**
 The script protects these ports by default:
-- **SSH**: 22222 (with brute-force protection)
+- **SSH**: 22222 (not default ssh port - with brute-force protection)
 - **HTTP**: 80 
 - **HTTPS**: 443
 - **Email**: 25, 2525, 465, 587, 143
@@ -448,15 +448,15 @@ This firewall script is designed for educational and legitimate server protectio
 
 ## 🔗 Related Projects
 
-- **[Virebent.art](https://virebent.art)** - Privacy-first digital services
-- **[robots.txt Generator](https://github.com/virebent/robots-txt)** - Companion robots.txt for bot blocking
+- **[Virebent.art](https://www.virebent.art)** - Privacy-first digital services
+- **[robots.txt Generator](https://github.com/gabrix73/surveillance-capitalism-blocker/blob/main/robots.txt)** - Companion robots.txt for bot blocking
 - **[NNTP Server](https://news.tcpreset.net)** - Decentralized communication alternative
 
 ## 📞 Support
 
 - 💬 **Matrix Chat**: `@gabx:kosmikdog.eu`
-- 🌐 **Website**: [virebent.art](https://virebent.art)
-- 📧 **Email**: info@virebent.art (PGP encrypted preferred)
+- 🌐 **Website**: [www.virebent.art](https://www.virebent.art)
+- 📧 **Email**: info@virebent.art (PGP encrypted preferred Key ID: C6625F44806AC65957935BD848BF95F3ECACDDB3)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/virebent/advanced-firewall/issues)
 
 ---
