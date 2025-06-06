@@ -433,7 +433,7 @@ We welcome contributions! Please:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://github.com/gabrix73/surveillance-capitalism-blocker/blob/main/LICENSE)) file for details.
 
 ## ⚠️ Disclaimer
 
