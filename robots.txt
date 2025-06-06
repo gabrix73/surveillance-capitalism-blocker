@@ -1,0 +1,269 @@
+# robots.txt per motori di ricerca indipendenti
+# Permette solo i bot dei motori di ricerca privacy-focused con crawler autonomi
+# Blocca tutti gli altri bot, crawler e AI scrapers
+# Ultimo aggiornamento: 2025-06-04
+
+# =====================================
+# MOTORI DI RICERCA INDIPENDENTI PERMESSI
+# =====================================
+
+# DuckDuckGo - Motore di ricerca privacy-focused
+User-agent: DuckDuckBot
+Allow: /
+
+# DuckDuckGo Favicon Bot
+User-agent: DuckDuckGo-Favicons-Bot
+Allow: /
+
+# Brave Search - Motore di ricerca indipendente
+User-agent: BraveBot
+Allow: /
+
+# Brave HTTP Error Bot
+User-agent: Brave-HTTP-Error-Bot
+Allow: /
+
+# Mojeek - Motore di ricerca indipendente britannico
+User-agent: MojeekBot
+Allow: /
+
+# Qwant - Motore di ricerca europeo
+User-agent: Qwantbot
+Allow: /
+
+# YaCy - Motore di ricerca peer-to-peer decentralizzato
+User-agent: yacybot
+Allow: /
+
+# Searx - Metasearch engine open source
+User-agent: searx
+Allow: /
+
+# =====================================
+# TUTTI GLI ALTRI BOT BLOCCATI
+# =====================================
+
+# Blocca tutti gli altri user-agent non specificati sopra
+User-agent: *
+Disallow: /
+
+# =====================================
+# BLOCCO ESPLICITO BOT COMMERCIALI E AI
+# =====================================
+
+# Google bots
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# Microsoft Bing bots
+User-agent: Bingbot
+Disallow: /
+
+User-agent: BingPreview
+Disallow: /
+
+User-agent: msnbot
+Disallow: /
+
+User-agent: adidxbot
+Disallow: /
+
+# Yahoo bots
+User-agent: Slurp
+Disallow: /
+
+# Yandex bots
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexVideo
+Disallow: /
+
+User-agent: YandexNews
+Disallow: /
+
+User-agent: YandexGPT
+Disallow: /
+
+# Baidu bots
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-image
+Disallow: /
+
+User-agent: Baiduspider-video
+Disallow: /
+
+User-agent: Baiduspider-news
+Disallow: /
+
+# AI e LLM bots
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-User
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: MistralBot
+Disallow: /
+
+# Meta/Facebook bots
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# Apple bots
+User-agent: Applebot
+Disallow: /
+
+User-agent: AppleNewsBot
+Disallow: /
+
+# Amazon bots
+User-agent: amazonbot
+Disallow: /
+
+# Bytedance/TikTok bots
+User-agent: Bytespider
+Disallow: /
+
+# Twitter/X bots
+User-agent: Twitterbot
+Disallow: /
+
+# LinkedIn bots
+User-agent: LinkedInBot
+Disallow: /
+
+# Pinterest bots
+User-agent: Pinterestbot
+Disallow: /
+
+# Telegram bots
+User-agent: TelegramBot
+Disallow: /
+
+# Discord bots
+User-agent: Discordbot
+Disallow: /
+
+# Scrapers e spider commerciali
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: Wayback
+Disallow: /
+
+# Aggressive crawlers e scrapers
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: 360Spider
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Neevabot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# =====================================
+# SITEMAP (opzionale)
+# =====================================
+
+# Sitemap: https://esempio.com/sitemap.xml
+
+# =====================================
+# NOTE
+# =====================================
+
+# Questo file robots.txt permette solo ai motori di ricerca indipendenti
+# e privacy-focused di indicizzare il sito. Tutti i bot commerciali,
+# AI scrapers e crawler di social media sono bloccati.
+#
+# Motori di ricerca permessi:
+# - DuckDuckGo: privacy-focused, non traccia gli utenti
+# - Brave Search: indipendente, con proprio indice
+# - Mojeek: motore di ricerca indipendente britannico
+# - Qwant: motore di ricerca europeo
+# - YaCy: peer-to-peer, decentralizzato
+# - Searx: metasearch open source
+#
+# NOTA: robots.txt è solo una raccomandazione. Bot malevoli
+# possono ignorarlo. Per sicurezza aggiuntiva, considera:
+# - Firewall a livello server
+# - Rate limiting
+# - Captcha per richieste sospette
+# - Monitoraggio dei log del server
