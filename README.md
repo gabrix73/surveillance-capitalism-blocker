@@ -456,8 +456,8 @@ This firewall script is designed for educational and legitimate server protectio
 
 - 💬 **Matrix Chat**: `@gabx:kosmikdog.eu`
 - 🌐 **Website**: [www.virebent.art](https://www.virebent.art)
-- 📧 **Email**: info@virebent.art (PGP encrypted preferred Key ID: [C6625F44806AC65957935BD848BF95F3ECACDDB3](https://www.virebent.art/C6625F44806AC65957935BD848BF95F3ECACDDB3.asc))
-- 🐛 **Issues**: [GitHub Issues](https://github.com/virebent/advanced-firewall/issues)
+- 📧 **Email**: info@virebent.art (PGP encrypted preferred Key ID: [C6625F44806AC65957935BD848BF95F3ECACDDB3](https://www.virebent.art/C6625F44806AC65957935BD848BF95F3ECACDDB3.asc)
+- 🐛 **Issues**: [GitHub Issues]([https://github.com/virebent/advanced-firewall/issues](https://github.com/gabrix73/surveillance-capitalism-blocker/issues)
 
 ---
 
