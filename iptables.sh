@@ -4,7 +4,7 @@
 # Advanced DDoS protection + Commercial crawler blocking
 # ================================================================
 
-LOCAL=37.27.81.18/32
+LOCAL=1.2.3.4/32
 
 if [[ $EUID -ne 0 ]]; then
         echo "This script must be run as root" 1>&2
