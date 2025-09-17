@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 # ================================================================
 # VIREBENT.ART - UNIFIED IPTABLES FIREWALL WITH BOT BLOCKING
 # Advanced DDoS protection + Commercial crawler blocking
