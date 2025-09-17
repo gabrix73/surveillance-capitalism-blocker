@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/bin/bash -x
 # ================================================================
 # VIREBENT.ART - UNIFIED IPTABLES FIREWALL WITH BOT BLOCKING
 # Advanced DDoS protection + Commercial crawler blocking
 # ================================================================
 
-LOCAL=1.2.3.4/32
+LOCAL=x.x.x.x/32
 
 if [[ $EUID -ne 0 ]]; then
         echo "This script must be run as root" 1>&2
@@ -291,9 +291,9 @@ $IPT -t mangle -A PREROUTING -s 172.16.0.0/12 -j DROP
 $IPT -t mangle -A PREROUTING -s 192.0.2.0/24 -j DROP
 #$IPT -t mangle -A PREROUTING -s 192.168.0.0/16 -j DROP
 #$IPT -t mangle -A PREROUTING -s 10.0.0.0/8 -j DROP
-$IPT -t mangle -A PREROUTING -s 0.0.0.0/8 -j DROP
+#$IPT -t mangle -A PREROUTING -s 0.0.0.0/8 -j DROP
 $IPT -t mangle -A PREROUTING -s 240.0.0.0/5 -j DROP
-$IPT -t mangle -A PREROUTING -s 127.0.0.0/8 ! -i lo -j DROP
+#$IPT -t mangle -A PREROUTING -s 127.0.0.0/8 ! -i lo -j DROP
 
 ### 6: Drop ICMP (you usually don't need this protocol) ###
 $IPT -t mangle -A PREROUTING -p icmp -j DROP
@@ -349,9 +349,9 @@ $IPT -A INPUT -p tcp -m state --state NEW --sport 53 -j ACCEPT
 $IPT -A INPUT -p udp -m state --state NEW --sport 53 -j ACCEPT
 
 ### SSH brute-force protection ###
-$IPT -A INPUT -p tcp --dport 22222 -m conntrack --ctstate NEW -m recent --set
-$IPT -A INPUT -p tcp --dport 22222 -m conntrack --ctstate NEW -m recent --update --seconds 60 --hitcount 10 -j DROP
-$IPT -A INPUT -p tcp --dport 22222 -m conntrack --ctstate NEW -j ACCEPT
+$IPT -I INPUT 1 -p tcp --dport 22222 -m conntrack --ctstate NEW -m recent --set
+$IPT -I INPUT 2 -p tcp --dport 22222 -m conntrack --ctstate NEW -m recent --update --seconds 60 --hitcount 10 -j DROP  
+$IPT -I INPUT 3 -p tcp --dport 22222 -m conntrack --ctstate NEW,RELATED,ESTABLISHED -j ACCEPT
 
 # ================================================================
 # OUTPUT RULES
